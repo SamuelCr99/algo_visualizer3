@@ -32,10 +32,10 @@ def create_blocks():
     block_list = []
     for x in range(amount_of_blocks):
         height = random.randint(0, HEIGHT)
-        red = random.randint(0, 255)
-        green = random.randint(0, 255)
-        blue = random.randint(0, 255)
-        color = (red, green, blue)
+        red    = random.randint(0, 255)
+        green  = random.randint(0, 255)
+        blue   = random.randint(0, 255)
+        color  = (red, green, blue)
         block_list.append(Block(height, color))
     return block_list
 
