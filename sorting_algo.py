@@ -1,6 +1,6 @@
 #This is the file for the sorting algorithms and the smaller helper functions. 
 from main import *
-DELAY = 50
+DELAY = 0
 
 def find_smallest(array):
     smallest = array[0]

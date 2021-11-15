@@ -3,7 +3,7 @@ import random
 from sorting_algo import *
 
 WIDTH, HEIGHT = 800,800 #Height and width of the pygame window. 
-BLOCK_WIDTH = 30
+BLOCK_WIDTH = 1
 WIN = pygame.display.set_mode ((WIDTH,HEIGHT))
 
 class Block:
@@ -42,9 +42,9 @@ def create_blocks():
 def main():
     block_list = create_blocks()
     while(1):
-        #selection_sort(block_list,WIN)
+        selection_sort(block_list,WIN)
         #bubble_sort(block_list,WIN)
-        insertion_sort(block_list,WIN)
+        #insertion_sort(block_list,WIN)
         
 
 
