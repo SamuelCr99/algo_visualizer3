@@ -20,7 +20,7 @@ def selection_sort(array, win):
         array[smallest] = tmp
         draw_screen(win,array)
         check_quit()
-        pygame.time.wait(DELAY)
+        #pygame.time.wait(DELAY)
     return array
 
 def bubble_sort(arr, win):  # Completes the bubble sort algorithm to order the list.
@@ -30,16 +30,16 @@ def bubble_sort(arr, win):  # Completes the bubble sort algorithm to order the l
             if arr[k].height > arr[k + 1].height:
                 arr[k], arr[k + 1] = arr[k+1], arr[k]
                 draw_screen(win, arr)
-                pygame.time.delay(DELAY)
+                #pygame.time.delay(DELAY)
     return arr
 
 def insertion_sort(arr, win):
     for i in range(len(arr)):
-            j = i
-            while (j > 0 and arr[j].height < arr[j-1].height):
-                temp = arr[j]
-                arr[j] = arr[j-1]
-                arr[j-1] = temp
-                j -= 1
-                draw_screen(win, arr)
-                pygame.time.delay(DELAY) 
+        j = i
+        while (j > 0 and arr[j].height < arr[j-1].height):
+            temp = arr[j]
+            arr[j] = arr[j-1]
+            arr[j-1] = temp
+            j -= 1
+            draw_screen(win, arr)
+            #pygame.time.delay(DELAY) 

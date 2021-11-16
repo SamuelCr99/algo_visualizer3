@@ -42,9 +42,9 @@ def create_blocks():
 def main():
     block_list = create_blocks()
     while(1):
-        selection_sort(block_list,WIN)
+        #selection_sort(block_list,WIN)
         #bubble_sort(block_list,WIN)
-        #insertion_sort(block_list,WIN)
+        insertion_sort(block_list,WIN)
         
 
 
