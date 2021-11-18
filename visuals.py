@@ -2,7 +2,7 @@ import pygame
 import random
 from sorting_algo import *
 
-WIDTH, HEIGHT = 800,800 #Height and width of the pygame window. 
+WIDTH, HEIGHT = 1400,800 #Height and width of the pygame window. 
 BLOCK_WIDTH = 1
 WIN = pygame.display.set_mode ((WIDTH,HEIGHT))
 
@@ -26,7 +26,7 @@ def check_quit():
         if event.type == pygame.QUIT:
             quit()   
 
-#Creates our blocks in an unsorted way. 
+#Creates our blocks in an unsorted array of blocks, which will then be sorted.  
 def create_blocks():
     amount_of_blocks = int(WIDTH / BLOCK_WIDTH)
     block_list = []
@@ -36,15 +36,18 @@ def create_blocks():
         green  = random.randint(0, 255)
         blue   = random.randint(0, 255)
         color  = (red, green, blue)
-        block_list.append(Block(height, color))
+        block_list.append(Block(height, (0,0,0)))
     return block_list
 
 def main():
     block_list = create_blocks()
+    #selection_sort(block_list,WIN)
+    #bubble_sort(block_list,WIN)
+    #insertion_sort(block_list,WIN)
+    #quick_sort(block_list,WIN)
     while(1):
-        #selection_sort(block_list,WIN)
-        #bubble_sort(block_list,WIN)
-        insertion_sort(block_list,WIN)
+        draw_screen(WIN,block_list)
+        check_quit()
         
 
 
