@@ -7,7 +7,6 @@ def quick_sort_rec(array,lo,hi,win):
     if lo >= hi:
         return array
     pivot = find_pivot(lo,hi) #Returns the pivot value based on our high and low. 
-    pivot_value = array[pivot]
     array[lo],array[pivot] = array[pivot],array[lo]
 
     stop_lo = 0

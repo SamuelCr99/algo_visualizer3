@@ -1,6 +1,7 @@
 #This is the file for the sorting algorithms and the smaller helper functions. 
 from visuals import draw_screen, check_quit
 from quick_sort import *
+from bogo_sort import *
 DELAY = 0
 
 def find_smallest(array):
